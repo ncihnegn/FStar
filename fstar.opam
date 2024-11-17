@@ -5,7 +5,7 @@ authors: "Nik Swamy <nswamy@microsoft.com>,Jonathan Protzenko <protz@microsoft.c
 homepage: "http://fstar-lang.org"
 license: "Apache-2.0"
 depends: [
-  "ocaml" {>= "4.14.0"}
+  "ocaml"
   "batteries"
   "zarith"
   "stdint"
@@ -21,7 +21,7 @@ depends: [
   "process"
   "ppx_deriving" {build}
   "ppx_deriving_yojson" {build}
-  "z3" {= "4.8.5-1"}
+  "z3"
 ]
 depexts: ["coreutils"] {os = "macos" & os-distribution = "homebrew"}
 build: [
@@ -30,7 +30,7 @@ build: [
 install: [
   [make "PREFIX=%{prefix}%" "install"]
 ]
-dev-repo: "git+https://github.com/FStarLang/FStar"
+dev-repo: "git+https://github.com/ncihnegn/FStar"
 bug-reports: "https://github.com/FStarLang/FStar/issues"
 synopsis: "Verification system for effectful programs"
 url {
